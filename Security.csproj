@@ -41,9 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cryptography\PFXCertificate.cs" />
+    <Compile Include="Cryptography\CryptographyHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Windows\ActiveDirectoryHelper.cs" />
     <Compile Include="Windows\ImpersonationHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Windows\Windows.csproj">
+      <Project>{7ED9CC7C-C2E8-4368-9531-66CF121ABDEC}</Project>
+      <Name>Windows</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
